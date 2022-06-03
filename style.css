@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card{
+    border: 2px solid grey ;
+    padding: 10px;
+    width: 300px;
+    height: 400px;
+    position: relative;
+}
+
+.container .card .photoAlbum{
+    position: relative;
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card .photoAlbum .photo{
+    width: 300px;
+    height: 200px;   
+    overflow: hidden;
+    transition: 0.5s;  
+}
+.container .card .photoAlbum .photo img{
+    width: 70%;
+    transition: 0.5s; 
+}
+.container .card:hover .photo{
+    width: 150px;  
+    height: 150px; 
+    border: 15px solid rgba(0,0,0,0.5);
+    border-radius: 50%; 
+    overflow: hidden;
+}
+.container .card:hover .photo img{
+    width: 100%; 
+}
