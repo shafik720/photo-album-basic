@@ -32,7 +32,7 @@ body{
     bottom: 0;
     left: 0;
     right: 0;
-    background: #035a8d;
+    background: linear-gradient(45deg,#FF4141, #E2574C);
     clip-path: circle(30% at right 90%);
 }
 
@@ -46,15 +46,17 @@ body{
 
 .container .card .photoAlbum .photo{
     width: 300px;
-    height: 200px;   
+    height: 500px;   
     overflow: hidden;
     transition: 0.5s;  
     position: absolute;
-    top: 0;    
+    top: 60px;  
+    /* opacity: 0.9; */
 }
 .container .card .photoAlbum .photo img{
     width: 70%;
-    transition: 0.5s;      
+    transition: 0.5s;     
+    border-radius: 15px ; 
 }
 .container .card:hover .photo{
     width: 150px;  
@@ -62,6 +64,8 @@ body{
     border: 15px solid #359367;
     border-radius: 50%; 
     overflow: hidden;
+    top: 0; 
+    opacity: 1; 
     z-index: 10; 
 }
 .container .card:hover .photo img{
