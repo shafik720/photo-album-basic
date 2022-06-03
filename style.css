@@ -4,7 +4,7 @@
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 body{
-    background: linear-gradient(45deg, #0974f1, #9fccfa);
+    background: linear-gradient(45deg, hsla(213, 77%, 14%, 1) 0%, hsla(202, 27%, 45%, 1) 100%);
 }
 
 .container{
@@ -26,6 +26,7 @@ body{
     overflow: hidden;
     border-radius: 15px;
     box-shadow: 0 20px 30px rgba(0,0,0,0.7); 
+    background: linear-gradient(120deg, hsla(213, 77%, 14%, 1) 0%, hsla(202, 27%, 45%, 1) 100%);
 }
 
 .card::before{
@@ -59,7 +60,6 @@ body{
 .container .card .photoAlbum .photo img{
     width: 70%;
     transition: 0.5s;     
-    border-radius: 15px ; 
 }
 .container .card:hover .photo{
     width: 150px;  
