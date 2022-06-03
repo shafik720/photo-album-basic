@@ -83,6 +83,9 @@ body{
     backdrop-filter: blur(5px);
     width: 90%;
 }
+.container .card .contentBox .icons:hover{
+    background: rgba(255, 255, 255, 0.4);   
+}
 .container .card:hover .icons{
     transform: translateY(-260px);
 }
