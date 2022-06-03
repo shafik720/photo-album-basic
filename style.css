@@ -9,6 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative; 
 }
 
 .container .card{
@@ -32,6 +33,8 @@
     height: 200px;   
     overflow: hidden;
     transition: 0.5s;  
+    position: absolute;
+    top: 0;
 }
 .container .card .photoAlbum .photo img{
     width: 70%;
@@ -40,9 +43,11 @@
 .container .card:hover .photo{
     width: 150px;  
     height: 150px; 
-    border: 15px solid rgba(0,0,0,0.5);
+    border: 15px solid rgba(0, 0, 0, 0.774);
     border-radius: 50%; 
     overflow: hidden;
+    z-index: 10; 
+    top: -100px; 
 }
 .container .card:hover .photo img{
     width: 100%; 
