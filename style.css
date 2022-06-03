@@ -4,7 +4,7 @@
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 body{
-    background: linear-gradient(45deg, #f13c77, #f5e6ad);
+    background: linear-gradient(45deg, #0974f1, #9fccfa);
 }
 
 .container{
@@ -22,7 +22,18 @@ body{
     position: relative;
     overflow: hidden;
     border-radius: 15px;
-    box-shadow: 0 20px 30px rgba(0,0,0,0.4); 
+    box-shadow: 0 20px 30px rgba(0,0,0,0.7); 
+}
+
+.card::before{
+    position: absolute;
+    content: ' ';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #035a8d;
+    clip-path: circle(30% at right 90%);
 }
 
 .container .card .photoAlbum{
@@ -67,10 +78,10 @@ body{
     transform: translateY(100px);
     width: 90%; 
     transition: 0.5s;
-    background: rgba(255, 255, 255, 0.2); 
+    background: rgba(255, 255, 255, 0.5); 
     padding: 15px ; 
     border-radius: 10px ;
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(5px);
 }
 .container .card .contentBox .box h2{
     margin-bottom: 15px; 
